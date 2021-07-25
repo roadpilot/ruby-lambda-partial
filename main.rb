@@ -1,6 +1,6 @@
 combination = -> (number) do
    -> (another_number) do
-       number + another_number
+       (number-another_number+1..number).inject(:*) / (1..another_number).inject(:*)
    end
 end
 
